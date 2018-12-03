@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!DOCTYPE tiles-definitions PUBLIC  
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions> 
+
+
+ 	<!--  developer pages -->
+ 
+ 	<definition name="loginTileDef" template="/WEB-INF/views/login.jsp">   
+   </definition>
+  
+   	<definition name="successDef" template="/WEB-INF/views/success.jsp">   
+   </definition>
+   
+   <definition name="reRegister" template="/WEB-INF/views/login2.jsp">
+   </definition>
+   
+   
+   <!-- developer Page -->
+   <definition name="dev-base" template="/WEB-INF/views/developer/home.jsp">  
+	       <put-attribute name="title" value="- Developer -" />  
+	       <put-attribute name="commonfile" value="/WEB-INF/views/developer/common/commonfile.jsp" />  
+	       <put-attribute name="header" value="/WEB-INF/views/developer/common/header.jsp" />
+	       <put-attribute name="navbar_top" value="/WEB-INF/views/developer/common/navbar_top.jsp" />    
+	       <put-attribute name="navbar" value="/WEB-INF/views/developer/common/navbar.jsp" />  
+	       <put-attribute name="sidebar" value="/WEB-INF/views/developer/common/sidebar.jsp" />       
+	       <put-attribute name="footer" value="/WEB-INF/views/developer/common/footer.jsp" /> 
+	       <put-attribute name="fullpage" value="/WEB-INF/views/developer/dashbord.jsp"/>       
+	       <put-attribute name="model" value="/WEB-INF/views/model.jsp" /> 
+	       <put-attribute name="No_js" value="/WEB-INF/views/noJavaScript.jsp" />    
+   </definition>
+   
+   <!-- Page    -->
+   <definition name="student-base" template="/WEB-INF/views/student/home.jsp">  
+	       <put-attribute name="title" value="- student -" />  
+	       <put-attribute name="commonfile" value="/WEB-INF/views/student/common/commonfile.jsp" />  
+	       <put-attribute name="header" value="/WEB-INF/views/student/common/header.jsp" />
+	       <put-attribute name="navbar_top" value="/WEB-INF/views/student/common/navbar_top.jsp" />    
+	       <put-attribute name="navbar" value="/WEB-INF/views/student/common/navbar.jsp" />  
+	       <put-attribute name="sidebar" value="/WEB-INF/views/student/common/sidebar.jsp" />       
+	       <put-attribute name="footer" value="/WEB-INF/views/student/common/footer.jsp" /> 
+	       <put-attribute name="fullpage" value="/WEB-INF/views/student/dashbord.jsp"/>       
+	       <put-attribute name="model" value="/WEB-INF/views/model.jsp" /> 
+	       <put-attribute name="No_js" value="/WEB-INF/views/noJavaScript.jsp" />    
+   </definition>
+   
+    <definition name="new_project" extends="dev-base">  
+       <put-attribute name="title" value="-- Developer | Add user --" />   
+       <put-attribute name="fullpage" value="/WEB-INF/views/developer/new_project_form.jsp" />    
+   </definition> 
+   
+</tiles-definitions>
